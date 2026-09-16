@@ -11,70 +11,70 @@
     <link rel="stylesheet" href="./src/output.css">
 </head>
 <body>
-    <nav class="bg-black/40 backdrop-blur-xl p-3 grid grid-cols-10 bg-fixed fixed w-full h-auto z-1">
-        <a href="#home" class="cursor-pointer col-span-7 text-white text-2xl pl-10"><h1 class="">Trixy!</h1></a>
-        <a href="#about" class="cursor-pointer  text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg hover:text-ring-white/70 text-center">About</a>
-        <a href="#work" class="cursor-pointer  text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg hover:text-ring-white/70 text-center">Work</a>
-        <a href="#contact" class="cursor-pointer  text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg hover:text-ring-white/70 text-center">Contact</a>
+    <nav class="navbar-container">
+        <a href="#home" class="navbar-name"><h1 class="">Trixy!</h1></a>
+        <a href="#about" class="navbar-bookmark">About</a>
+        <a href="#work" class="navbar-bookmark">Work</a>
+        <a href="#contact" class="navbar-bookmark">Contact</a>
     </nav>
     <section id="home" class="">
         <img src="asset/background/landing-bg.jpg" alt="" class="w-full h-full">
-        <div class="absolute bg-black/80 text-left inset-0 flex flex-col items-center justify-center w-full h-full object-cover">
-            <div class="justify-center place-self-center item-center text-shadow-white grid grid-cols-2 gap-10">
+        <div class="home-text-container">
+            <div class="home-text-grid">
                 <div class="">
                     <img src="" alt="" class="">
                 </div>
                 <div class="">
-                    <h1 class="text-yellow-500 p-2">Front End Developer & AI Engineer</h1>
-                    <h1 class="text-white text-8xl p-2">This is Trixy!</h1>
-                    <p class="text-gray-300 p-2 pb-4">I Built Website, Content Creations, and Video Editor</p>
-                    <a href="#work" class="transition duration-200 border border-2 border-gray-500 shadow-xl p-2 text-gray-500 hover:border-white hover:text-white">Check out my Work!</a>
+                    <h1 class="home-text-interest">Front End Developer & AI Engineer</h1>
+                    <h1 class="home-text-name">This is Trixy!</h1>
+                    <p class="home-text-work">I Built Website, Content Creations, and Video Editor</p>
+                    <a href="#work" class="home-text-button">Check out my Work!</a>
                 </div>
             </div>
         </div>
     </section>
-    <img src="asset/background/scribble-bg.png" alt="" class="fixed bg-repeat opacity-25 blur-sm z-[-50] w-full place-self-center justify-center">
-    <section id="about" class="p-15 ">
-        <div class="grid grid-cols-3 gap-20 p-3">
-            <div class="col-span-2 p-4">
-                <h1 class="text-white text-8xl p-5">About Me</h1>
-                <p class="text-gray-300 text-justify p-3">I'm an AI Enthusiast especially Large Language Models(LLM), Junior Web Developer, Graphic Designers, Video Editor, and Content Creator.
+    <img src="asset/background/scribble-bg.png" alt="" class="bg-website-fixed">
+    <section id="about" class="about-section">
+        <div class="about-layout">
+            <div class="about-col-span-text">
+                <h1 class="about-title">About Me</h1>
+                <p class="about-desc">I'm an AI Enthusiast especially Large Language Models(LLM), Junior Web Developer, Graphic Designers, Video Editor, and Content Creator.
                     <br><br>I'm a Computer Engineering graduate from Telkom University. Over the past 5 years, I have built a strong foundation in Artificial Intelligence, Web Development, Graphic Design, Video Editing, and Content Creation. Passionate about innovation, I love turning ideas into impactful projects and sharing my knowledge with the community.
                     <br><br>These days, I focus on learning about web developing, such as PHP and Laravel. aside from that, I'm also working as a Vice Leader in Laboratory that my campus held on.</p>
-                <div class="flex flex-warp space-x-2 p-4">
-                    <button id="" class="transtion duration-200 justify-center text-center border border-gray-600 rounded-full text-gray-400 w-auto justify-center p-2 text-sm hover:border-orange-500">HTML</button>
-                    <button id="" class="transtion duration-200 justify-center text-center border border-gray-600 rounded-full text-gray-400 w-auto justify-center p-2 text-sm hover:border-orange-500">CSS</button>
-                    <button id="" class="transtion duration-200 justify-center text-center border border-gray-600 rounded-full text-gray-400 w-auto justify-center p-2 text-sm hover:border-orange-500">Tailwind CSS</button>
-                    <button id="" class="transtion duration-200 justify-center text-center border border-gray-600 rounded-full text-gray-400 w-auto justify-center p-2 text-sm hover:border-orange-500">JavaScript</button>
-                    <button id="" class="transtion duration-200 justify-center text-center border border-gray-600 rounded-full text-gray-400 w-auto justify-center p-2 text-sm hover:border-orange-500">Python</button>
-                    <button id="" class="transtion duration-200 justify-center text-center border border-gray-600 rounded-full text-gray-400 w-auto justify-center p-2 text-sm hover:border-orange-500">MATLAB</button>
+                <div class="about-skill-flex">
+                    <button id="" class="about-skill-piece">HTML</button>
+                    <button id="" class="about-skill-piece">CSS</button>
+                    <button id="" class="about-skill-piece">Tailwind CSS</button>
+                    <button id="" class="about-skill-piece">JavaScript</button>
+                    <button id="" class="about-skill-piece">Python</button>
+                    <button id="" class="about-skill-piece">MATLAB</button>
                 </div>    
             </div>
-            <img src="asset/persona/img-persona.jpg" alt="" class="rounded-full">
+            <img src="asset/persona/img-persona.jpg" alt="" class="about-img-persona">
         </div>
     </section>
-    <section id="work" class="p-15" >
-        <h1 class="justify-center place-self-center item-center text-8xl text-white">My Work</h1>
-        <div class="grid grid-cols-6 gap-15 justify-center place-self-center item-center p-9">
-            <button id="" class="cursor-pointer text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg hover:text-ring-white/50 text-center" onclick="renderEditing('Editing')">Video Editing</button>
-            <button id="" class="cursor-pointer text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg hover:text-ring-white/50 text-center" onclick="renderContent('Content')">Content</button>
-            <button id="" class="cursor-pointer text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg hover:text-ring-white/50 text-center" onclick="renderWebsite('Website')">Website</button>
-            <button id="" class="cursor-pointer text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg hover:text-ring-white/50 text-center" onclick="renderAIMl('AIML')">AI & ML</button>
-            <button id="" class="cursor-pointer text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg hover:text-ring-white/50 text-center" onclick="renderMontage('Montage')">Montage</button>
-            <button id="" class="cursor-pointer text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg hover:text-ring-white/50 text-center" onclick="renderDesign('Design')">Graphic Design</button>
+    <section id="work" class="work-section" >
+        <h1 class="work-title">My Work<hr></h1>
+        <div class="work-filter-grid">
+            <button id="" class="work-filter-trigger" onclick="renderEditing('Editing')">Video Editing</button>
+            <button id="" class="work-filter-trigger" onclick="renderContent('Content')">Content</button>
+            <button id="" class="work-filter-trigger" onclick="renderWebsite('Website')">Website</button>
+            <button id="" class="work-filter-trigger" onclick="renderAIMl('AIML')">AI & ML</button>
+            <button id="" class="work-filter-trigger" onclick="renderMontage('Montage')">Montage</button>
+            <button id="" class="work-filter-trigger" onclick="renderDesign('Design')">Graphic Design</button>
         </div>
         <div id="parent-show" class=""></div>
     </section>
-    <section id="contact" class="p-10 bottom-0">
-        <h1 class="justify-center place-self-center item-center text-8xl text-white">Contact</h1>
-        <div class="grid grid-cols-5 gap-10 justify-center place-self-center item-center p-10">
-            <a href="https://www.instagram.com/trixyfps_/" class="" target="_blank"><img src="asset/logo/logo-ig.png" alt="" class="w-10 h-auto saturate-0 hover:scale-102 hover:drop-shadow-white hover:drop-shadow-lg rounded-full"></a>
-            <a href="https://www.tiktok.com/@trixyfps1402" class="" target="_blank"><img src="asset/logo/logo-tiktok.png" alt="" class="w-10 h-auto saturate-0 hover:scale-102 hover:drop-shadow-white hover:drop-shadow-lg rounded-full"></a>
-            <a href="https://www.youtube.com/@trixyamvs" class="" target="_blank"><img src="asset/logo/logo-youtube.png" alt="" class="w-10 h-auto saturate-0 hover:scale-102 hover:drop-shadow-white hover:drop-shadow-lg rounded-full"></a>
-            <a href="https://www.linkedin.com/in/bayu-setyo-prajuritno-4a18333b0/" class="" target="_blank"><img src="asset/logo/logo-linkedin.png" alt="" class="w-10 h-auto saturate-0 hover:scale-102 hover:drop-shadow-white hover:drop-shadow-lg rounded-full"></a>
-            <a href="https://github.com/urDrek0" class="" target="_blank"><img src="asset/logo/logo-github.png" alt="" class="w-10 h-auto saturate-0 hover:scale-102 hover:drop-shadow-white hover:drop-shadow-lg rounded-full"></a>
+    <section id="contact" class="contact-section">
+        <h1 class="contact-title">Contact</h1>
+        <div class="contact-grid">
+            <a href="https://www.instagram.com/trixyfps_/" class="" target="_blank"><img src="asset/logo/logo-ig.png" alt="" class="contact-img"></a>
+            <a href="https://www.tiktok.com/@trixyfps1402" class="" target="_blank"><img src="asset/logo/logo-tiktok.png" alt="" class="contact-img"></a>
+            <a href="https://www.youtube.com/@trixyamvs" class="" target="_blank"><img src="asset/logo/logo-youtube.png" alt="" class="contact-img"></a>
+            <a href="https://www.linkedin.com/in/bayu-setyo-prajuritno-4a18333b0/" class="" target="_blank"><img src="asset/logo/logo-linkedin.png" alt="" class="contact-img"></a>
+            <a href="https://github.com/urDrek0" class="" target="_blank"><img src="asset/logo/logo-github.png" alt="" class="contact-img"></a>
         </div>
-        <h1 class="justify-center place-self-center item-center text-sm text-gray-300">Copyright © 2026 Trixy. All rights reserved.</h1>
+        <h1 class="contact-copyright">Copyright © 2026 Trixy. All rights reserved.</h1>
     </section>
 </body>
 
@@ -91,16 +91,16 @@
         var loadData = await returnPromise()
         var filterWork = loadData.filter((work) => work.category === workCategory)
         const workContainer = document.getElementById("parent-show")
-        workContainer.innerHTML = `<div id="showEditing" class="grid grid-cols-3 gap-10 p-4" data-category="Editing"></div>`
+        workContainer.innerHTML = `<div id="showEditing" class="work-editing-grid" data-category="Editing"></div>`
         const workCard = document.getElementById('showEditing')
         workCard.innerHTML = filterWork.map((work) => `
-            <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">
-                <div id="" class="grid grid-cols-2 gap-5">
-                    <img id="${work.id}" class="p-4" src="${work.link_img}" alt="Video Thumbnail">
-                <div id="" class="pt-8">
-                    <h1 id="" class="text-xl text-white text-left p-1">${work.title}</h1>
-                    <p id="" class="text-gray-500 text-justify p-1">Category : ${work.category}</p>
-                </div>
+            <a id="${work.category}" class="work-editing-border" target="_blank" href="${work.link_url}">
+                <div id="" class="work-editing-card-grid">
+                    <img id="${work.id}" class="work-editing-img" src="${work.link_img}" alt="Video Thumbnail">
+                    <div id="" class="work-editing-top-spacing">
+                        <h1 id="" class="work-editing-card-title">${work.title}</h1>
+                        <p id="" class="work-editing-card-category">Category : ${work.category}</p>
+                    </div>
                 </div>
             </a>
         `).join("")
@@ -109,16 +109,16 @@
         var loadData = await returnPromise()
         var filterWork = loadData.filter((work) => work.category === workCategory)
         const workContainer = document.getElementById("parent-show")
-        workContainer.innerHTML = `<div id="showWebsite" class="grid grid-cols-2 gap-10 p-4" data-category="Website"></div>`
+        workContainer.innerHTML = `<div id="showWebsite" class="work-website-grid" data-category="Website"></div>`
         const workCard = document.getElementById('showWebsite')
         workCard.innerHTML = filterWork.map((work) => `
-            <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">
-                <div id="" class="grid grid-cols-2 gap-5">
-                    <img id="${work.id}" class="p-4" src="${work.link_img}" alt="Video Thumbnail">
-                <div id="" class="pt-8">
-                    <h1 id="" class="text-xl text-white text-left">${work.title}</h1>
-                    <p id="" class="text-gray-500 text-justify">Category : ${work.category}</p>
-                </div>
+            <a id="${work.category}" class="work-website-border" target="_blank" href="${work.link_url}">
+                <div id="" class="work-website-card-grid">
+                    <img id="${work.id}" class="work-website-img" src="${work.link_img}" alt="Video Thumbnail">
+                    <div id="" class="work-website-top-spacing">
+                        <h1 id="" class="work-website-card-title">${work.title}</h1>
+                        <p id="" class="work-website-card-category">Category : ${work.category}</p>
+                    </div>
                 </div>
             </a>
         `).join("")
@@ -127,16 +127,16 @@
         var loadData = await returnPromise()
         var filterWork = loadData.filter((work) => work.category === workCategory)
         const workContainer = document.getElementById("parent-show")
-        workContainer.innerHTML = `<div id="showMontage" class="grid grid-cols-3 gap-10 p-4" data-category="Montage"></div>`
+        workContainer.innerHTML = `<div id="showMontage" class="work-montage-grid" data-category="Montage"></div>`
         const workCard = document.getElementById('showMontage')
         workCard.innerHTML = filterWork.map((work) => `
-            <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">
-                <div id="" class="grid grid-cols-2 gap-5">
-                    <img id="${work.id}" class="p-4" src="${work.link_img}" alt="Video Thumbnail">
-                <div id="" class="pt-8">
-                    <h1 id="" class="text-xl text-white text-left">${work.title}</h1>
-                    <p id="" class="text-gray-500 text-justify">Category : ${work.category}</p>
-                </div>
+            <a id="${work.category}" class="work-montage-border" target="_blank" href="${work.link_url}">
+                <div id="" class="work-montage-card-grid">
+                    <img id="${work.id}" class="work-montage-img" src="${work.link_img}" alt="Video Thumbnail">
+                    <div id="" class="work-montage-top-spacing">
+                        <h1 id="" class="work-montage-card-title">${work.title}</h1>
+                        <p id="" class="work-montage-card-category">Category : ${work.category}</p>
+                    </div>
                 </div>
             </a>
         `).join("")
@@ -145,16 +145,16 @@
         var loadData = await returnPromise()
         var filterWork = loadData.filter((work) => work.category === workCategory)
         const workContainer = document.getElementById("parent-show")
-        workContainer.innerHTML = `<div id="showContent" class="grid grid-cols-2 gap-10 p-4" data-category="Content"></div>`
+        workContainer.innerHTML = `<div id="showContent" class="work-content-grid" data-category="Content"></div>`
         const workCard = document.getElementById('showContent')
         workCard.innerHTML = filterWork.map((work) => `
-            <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">
-                <div id="" class="grid grid-cols-2 gap-5">
-                    <img id="${work.id}" class="p-4" src="${work.link_img}" alt="Video Thumbnail">
-                <div id="" class="p-8">
-                    <h1 id="" class="text-xl text-white text-left">${work.title}</h1>
-                    <p id="" class="text-gray-500 text-justify">Category : ${work.category}</p>
-                </div>
+            <a id="${work.category}" class="work-content-border" target="_blank" href="${work.link_url}">
+                <div id="" class="work-content-card-grid">
+                    <img id="${work.id}" class="work-content-img" src="${work.link_img}" alt="Video Thumbnail">
+                    <div id="" class="work-content-top-spacing">
+                        <h1 id="" class="work-content-card-title">${work.title}</h1>
+                        <p id="" class="work-content-card-category">Category : ${work.category}</p>
+                    </div>
                 </div>
             </a>
         `).join("")
@@ -163,16 +163,16 @@
         var loadData = await returnPromise()
         var filterWork = loadData.filter((work) => work.category === workCategory)
         const workContainer = document.getElementById("parent-show")
-        workContainer.innerHTML = `<div id="showAiMl" class="grid grid-cols-2 gap-10 p-4" data-category="AIML"></div>`
+        workContainer.innerHTML = `<div id="showAiMl" class="work-aiml-grid" data-category="AIML"></div>`
         const workCard = document.getElementById('showAiMl')
         workCard.innerHTML = filterWork.map((work) => `
-            <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">
-                <div id="" class="grid grid-cols-2 gap-5">
-                    <img id="${work.id}" class="p-4" src="${work.link_img}" alt="Video Thumbnail">
-                <div id="" class="p-8">
-                    <h1 id="" class="text-xl text-white text-left">${work.title}</h1>
-                    <p id="" class="text-gray-500 text-justify">Category : ${work.category}</p>
-                </div>
+            <a id="${work.category}" class="work-aiml-border" target="_blank" href="${work.link_url}">
+                <div id="" class="work-aiml-card-grid">
+                    <img id="${work.id}" class="work-aiml-img" src="${work.link_img}" alt="Video Thumbnail">
+                    <div id="" class="work-aiml-top-spacing">
+                        <h1 id="" class="work-aiml-card-title">${work.title}</h1>
+                        <p id="" class="work-aiml-card-category">Category : ${work.category}</p>
+                    </div>
                 </div>
             </a>
         `).join("")
@@ -181,16 +181,16 @@
         var loadData = await returnPromise()
         var filterWork = loadData.filter((work) => work.category === workCategory)
         const workContainer = document.getElementById("parent-show")
-        workContainer.innerHTML = `<div id="showDesign" class="grid grid-cols-3 gap-10 p-4" data-category="Design"></div>`
+        workContainer.innerHTML = `<div id="showDesign" class="work-design-grid" data-category="Design"></div>`
         const workCard = document.getElementById('showDesign')
         workCard.innerHTML = filterWork.map((work) => `
-            <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">
-                <div id="" class="grid grid-cols-2 gap-5">
-                    <img id="${work.id}" class="p-4 max-w-full max-h-50 place-self-center" src="${work.link_img}" alt="Video Thumbnail">
-                <div id="" class="p-8">
-                    <h1 id="" class="text-xl text-white text-left">${work.title}</h1>
-                    <p id="" class="text-gray-500 text-justify">Category : ${work.category}</p>
-                </div>
+            <a id="${work.category}" class="work-design-border" target="_blank" href="${work.link_url}">
+                <div id="" class="work-design-card-grid">
+                    <img id="${work.id}" class="work-design-img" src="${work.link_img}" alt="Video Thumbnail">
+                    <div id="" class="work-design-top-spacing">
+                        <h1 id="" class="work-design-card-title">${work.title}</h1>
+                        <p id="" class="work-design-card-category">Category : ${work.category}</p>
+                    </div>
                 </div>
             </a>
         `).join("")
