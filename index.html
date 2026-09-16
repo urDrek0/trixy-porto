@@ -62,12 +62,7 @@
             <button id="" class="cursor-pointer text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg hover:text-ring-white/50 text-center" onclick="renderMontage('Montage')">Montage</button>
             <button id="" class="cursor-pointer text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg hover:text-ring-white/50 text-center" onclick="renderDesign('Design')">Graphic Design</button>
         </div>
-        <div id="showEditing" class="grid grid-cols-3 gap-10"></div>
-        <div id="showContent" class="grid grid-cols-2 gap-10"></div>
-        <div id="showWebsite" class="grid grid-cols-2 gap-10"></div>
-        <div id="showAiMl" class="grid grid-cols-2 gap-10"></div>
-        <div id="showMontage" class="grid grid-cols-3 gap-10"></div>
-        <div id="showDesign" class="grid grid-cols-2 gap-10"></div>
+        <div id="parent-show" class=""></div>
     </section>
     <section id="contact" class="p-10">
         <h1 class="justify-center place-self-center item-center text-8xl text-white">Contact</h1>
@@ -94,6 +89,8 @@
     async function renderEditing(workCategory){
         var loadData = await returnPromise()
         var filterWork = loadData.filter((work) => work.category === workCategory)
+        const workContainer = document.getElementById("parent-show")
+        workContainer.innerHTML = `<div id="showEditing" class="grid grid-cols-3 gap-10 p-4" data-category="Editing"></div>`
         const workCard = document.getElementById('showEditing')
         workCard.innerHTML = filterWork.map((work) => `
             <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">
@@ -110,6 +107,8 @@
     async function renderWebsite(workCategory){
         var loadData = await returnPromise()
         var filterWork = loadData.filter((work) => work.category === workCategory)
+        const workContainer = document.getElementById("parent-show")
+        workContainer.innerHTML = `<div id="showWebsite" class="grid grid-cols-2 gap-10 p-4" data-category="Website"></div>`
         const workCard = document.getElementById('showWebsite')
         workCard.innerHTML = filterWork.map((work) => `
             <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">
@@ -126,6 +125,8 @@
     async function renderMontage(workCategory){
         var loadData = await returnPromise()
         var filterWork = loadData.filter((work) => work.category === workCategory)
+        const workContainer = document.getElementById("parent-show")
+        workContainer.innerHTML = `<div id="showMontage" class="grid grid-cols-3 gap-10 p-4" data-category="Montage"></div>`
         const workCard = document.getElementById('showMontage')
         workCard.innerHTML = filterWork.map((work) => `
             <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">
@@ -142,7 +143,27 @@
     async function renderContent(workCategory){
         var loadData = await returnPromise()
         var filterWork = loadData.filter((work) => work.category === workCategory)
+        const workContainer = document.getElementById("parent-show")
+        workContainer.innerHTML = `<div id="showContent" class="grid grid-cols-2 gap-10 p-4" data-category="Content"></div>`
         const workCard = document.getElementById('showContent')
+        workCard.innerHTML = filterWork.map((work) => `
+            <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">
+                <div id="" class="grid grid-cols-2 gap-5">
+                    <img id="${work.id}" class="p-4" src="${work.link_img}" alt="Video Thumbnail">
+                <div id="" class="p-8">
+                    <h1 id="" class="text-xl text-white text-left">${work.title}</h1>
+                    <p id="" class="text-gray-500 text-justify">Category : ${work.category}</p>
+                </div>
+                </div>
+            </a>
+        `).join("")
+    }
+    async function renderAIMl(workCategory){
+        var loadData = await returnPromise()
+        var filterWork = loadData.filter((work) => work.category === workCategory)
+        const workContainer = document.getElementById("parent-show")
+        workContainer.innerHTML = `<div id="showAiMl" class="grid grid-cols-2 gap-10 p-4" data-category="AIML"></div>`
+        const workCard = document.getElementById('showAiMl')
         workCard.innerHTML = filterWork.map((work) => `
             <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">
                 <div id="" class="grid grid-cols-2 gap-5">
@@ -158,11 +179,13 @@
     async function renderDesign(workCategory){
         var loadData = await returnPromise()
         var filterWork = loadData.filter((work) => work.category === workCategory)
+        const workContainer = document.getElementById("parent-show")
+        workContainer.innerHTML = `<div id="showDesign" class="grid grid-cols-2 gap-10 p-4" data-category="Design"></div>`
         const workCard = document.getElementById('showDesign')
         workCard.innerHTML = filterWork.map((work) => `
             <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">
                 <div id="" class="grid grid-cols-2 gap-5">
-                    <img id="${work.id}" class="p-4" src="${work.link_img}" alt="Video Thumbnail">
+                    <img id="${work.id}" class="p-4 max-w-full max-h-50 place-self-center" src="${work.link_img}" alt="Video Thumbnail">
                 <div id="" class="p-8">
                     <h1 id="" class="text-xl text-white text-left">${work.title}</h1>
                     <p id="" class="text-gray-500 text-justify">Category : ${work.category}</p>

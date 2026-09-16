@@ -635,5 +635,19 @@
         "category":  "Editing",
         "link_img":  "https://img.youtube.com/vi/vvQQj8K4Jd8/hqdefault.jpg",
         "link_url":  "https://youtu.be/vvQQj8K4Jd8?si=3hCZo0bTkKxPNXJ_"
+    },
+    {
+        "id":  92,
+        "title":  "Self Made Desktop Wallpaper",
+        "category":  "Design",
+        "link_img":  "asset/picture/horori wallpaper.jpg",
+        "link_url":  "https://drive.google.com/drive/folders/1xv2qjcF6Nl2vb2r30rIs4mTprVmnYxG4?usp=drive_link"
+    },
+    {
+        "id":  93,
+        "title":  "Self Made Mobile Wallpaper",
+        "category":  "Design",
+        "link_img":  "asset/picture/Wallpaper-Horori-HighRes-Mobile.jpg",
+        "link_url":  "https://drive.google.com/drive/folders/1ijEvBr8QOd3YSd82aeKOnGcXiWKLEPk3?usp=drive_link"
     }
 ]
