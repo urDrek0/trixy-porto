@@ -640,63 +640,63 @@
         "id":  92,
         "title":  "Self Made Desktop Wallpaper",
         "category":  "Design",
-        "link_img":  "asset/picture/horori wallpaper.jpg",
+        "link_img":  "asset/picture/horori wallpaper.jpeg",
         "link_url":  "https://drive.google.com/drive/folders/1xv2qjcF6Nl2vb2r30rIs4mTprVmnYxG4?usp=drive_link"
     },
     {
         "id":  93,
         "title":  "Self Made Mobile Wallpaper",
         "category":  "Design",
-        "link_img":  "asset/picture/Wallpaper-Horori-HighRes-Mobile.jpg",
+        "link_img":  "asset/picture/Wallpaper-Horori-HighRes-Mobile.jpeg",
         "link_url":  "https://drive.google.com/drive/folders/1ijEvBr8QOd3YSd82aeKOnGcXiWKLEPk3?usp=drive_link"
     },
     {
         "id":  94,
         "title":  "Black Orphan Logo",
         "category":  "Design",
-        "link_img":  "asset/picture/LOGO-Black Orphan.jpg",
-        "link_url":  "asset/picture/LOGO-Black Orphan.jpg"
+        "link_img":  "asset/picture/LOGO-Black Orphan.jpeg",
+        "link_url":  "asset/picture/LOGO-Black Orphan.jpeg"
     },
     {
         "id":  95,
         "title":  "Website Portofolio Trixy (Old)",
         "category":  "Website",
-        "link_img":  "asset/picture/web-porto.png",
+        "link_img":  "asset/picture/web-porto.jpeg",
         "link_url":  "https://urdrek0.github.io/index.html"
     },
     {
         "id":  96,
         "title":  "Website Agency Vtuber Aetheris ID",
         "category":  "Website",
-        "link_img":  "asset/picture/web-agency.png",
+        "link_img":  "asset/picture/web-agency.jpeg",
         "link_url":  "https://agency-vtuber-website.vercel.app/"
     },
     {
         "id":  97,
         "title":  "Website Portofolio Mordottee",
         "category":  "Website",
-        "link_img":  "asset/picture/web-porto-mordottee.png",
+        "link_img":  "asset/picture/web-porto-mordottee.jpeg",
         "link_url":  "https://mordottee-portofolio.vercel.app/"
     },
     {
         "id":  97,
         "title":  "Website Portofolio Trixy (New)",
         "category":  "Website",
-        "link_img":  "asset/picture/web-porto-trixy.png",
+        "link_img":  "asset/picture/web-porto-trixy.jpeg",
         "link_url":  "https://trixy-porto.vercel.app/"
     },
     {
         "id":  98,
         "title":  "[Streamlit] Munich Traffic Prediction",
         "category":  "AIML",
-        "link_img":  "asset/picture/streamlit-traffic-prediction.png",
+        "link_img":  "asset/picture/streamlit-traffic-prediction.jpeg",
         "link_url":  "https://trafficpredictionsdatsa2025.streamlit.app/"
     },
     {
         "id":  99,
         "title":  "[Streamlit] Munich Traffic Prediction",
         "category":  "Website",
-        "link_img":  "asset/picture/streamlit-traffic-prediction.png",
+        "link_img":  "asset/picture/streamlit-traffic-prediction.jpeg",
         "link_url":  "https://trafficpredictionsdatsa2025.streamlit.app/"
     },
     {
