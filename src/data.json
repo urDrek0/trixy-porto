@@ -684,5 +684,33 @@
         "category":  "Website",
         "link_img":  "asset/picture/web-porto-trixy.png",
         "link_url":  "https://trixy-porto.vercel.app/"
+    },
+    {
+        "id":  98,
+        "title":  "[Streamlit] Munich Traffic Prediction",
+        "category":  "AIML",
+        "link_img":  "asset/picture/streamlit-traffic-prediction.png",
+        "link_url":  "https://trafficpredictionsdatsa2025.streamlit.app/"
+    },
+    {
+        "id":  99,
+        "title":  "[Streamlit] Munich Traffic Prediction",
+        "category":  "Website",
+        "link_img":  "asset/picture/streamlit-traffic-prediction.png",
+        "link_url":  "https://trafficpredictionsdatsa2025.streamlit.app/"
+    },
+    {
+        "id":  100,
+        "title":  "Magic Cam Smart CCTV",
+        "category":  "Website",
+        "link_img":  "asset/picture/magiccam.jpeg",
+        "link_url":  "https://camera.tail6613c2.ts.net/"
+    },
+    {
+        "id":  101,
+        "title":  "YOLOv26n Human Detection",
+        "category":  "AIML",
+        "link_img":  "asset/picture/magiccam.jpeg",
+        "link_url":  "https://camera.tail6613c2.ts.net/"
     }
 ]
