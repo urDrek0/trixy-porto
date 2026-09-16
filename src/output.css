@@ -197,6 +197,9 @@
   .inset-0 {
     inset: 0px;
   }
+  .bottom-0 {
+    bottom: 0px;
+  }
   .z-1 {
     z-index: 1;
   }
@@ -232,6 +235,9 @@
   }
   .max-h-60 {
     max-height: calc(var(--spacing) * 60);
+  }
+  .max-h-70 {
+    max-height: calc(var(--spacing) * 70);
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
@@ -438,6 +444,9 @@
   }
   .underline {
     text-decoration-line: underline;
+  }
+  .opacity-25 {
+    opacity: 25%;
   }
   .opacity-50 {
     opacity: 50%;

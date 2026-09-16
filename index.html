@@ -32,7 +32,7 @@
             </div>
         </div>
     </section>
-    <img src="asset/background/scribble-bg.png" alt="" class="translate-y-1/2 absolute bg-repeat opacity-50 blur-sm z-[-50] w-full h-auto place-self-center justify-center">
+    <img src="asset/background/scribble-bg.png" alt="" class="fixed bg-repeat opacity-25 blur-sm z-[-50] w-full place-self-center justify-center">
     <section id="about" class="p-15 ">
         <div class="grid grid-cols-3 gap-20 p-3">
             <div class="col-span-2 p-4">
@@ -64,7 +64,7 @@
         </div>
         <div id="parent-show" class=""></div>
     </section>
-    <section id="contact" class="p-10">
+    <section id="contact" class="p-10 bottom-0">
         <h1 class="justify-center place-self-center item-center text-8xl text-white">Contact</h1>
         <div class="grid grid-cols-5 gap-10 justify-center place-self-center item-center p-10">
             <a href="https://www.instagram.com/trixyfps_/" class="" target="_blank"><img src="asset/logo/logo-ig.png" alt="" class="w-10 h-auto saturate-0 hover:scale-102 hover:drop-shadow-white hover:drop-shadow-lg rounded-full"></a>
@@ -180,7 +180,7 @@
         var loadData = await returnPromise()
         var filterWork = loadData.filter((work) => work.category === workCategory)
         const workContainer = document.getElementById("parent-show")
-        workContainer.innerHTML = `<div id="showDesign" class="grid grid-cols-2 gap-10 p-4" data-category="Design"></div>`
+        workContainer.innerHTML = `<div id="showDesign" class="grid grid-cols-3 gap-10 p-4" data-category="Design"></div>`
         const workCard = document.getElementById('showDesign')
         workCard.innerHTML = filterWork.map((work) => `
             <a id="${work.category}" class="break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black" target="_blank" href="${work.link_url}">

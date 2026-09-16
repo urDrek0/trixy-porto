@@ -649,5 +649,40 @@
         "category":  "Design",
         "link_img":  "asset/picture/Wallpaper-Horori-HighRes-Mobile.jpg",
         "link_url":  "https://drive.google.com/drive/folders/1ijEvBr8QOd3YSd82aeKOnGcXiWKLEPk3?usp=drive_link"
+    },
+    {
+        "id":  94,
+        "title":  "Black Orphan Logo",
+        "category":  "Design",
+        "link_img":  "asset/picture/LOGO-Black Orphan.jpg",
+        "link_url":  "asset/picture/LOGO-Black Orphan.jpg"
+    },
+    {
+        "id":  95,
+        "title":  "Website Portofolio Trixy (Old)",
+        "category":  "Website",
+        "link_img":  "asset/picture/web-porto.png",
+        "link_url":  "https://urdrek0.github.io/index.html"
+    },
+    {
+        "id":  96,
+        "title":  "Website Agency Vtuber Aetheris ID",
+        "category":  "Website",
+        "link_img":  "asset/picture/web-agency.png",
+        "link_url":  "https://agency-vtuber-website.vercel.app/"
+    },
+    {
+        "id":  97,
+        "title":  "Website Portofolio Mordottee",
+        "category":  "Website",
+        "link_img":  "asset/picture/web-porto-mordottee.png",
+        "link_url":  "https://mordottee-portofolio.vercel.app/"
+    },
+    {
+        "id":  97,
+        "title":  "Website Portofolio Trixy (New)",
+        "category":  "Website",
+        "link_img":  "asset/picture/web-porto-trixy.png",
+        "link_url":  "https://trixy-porto.vercel.app/"
     }
 ]
