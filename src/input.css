@@ -32,10 +32,26 @@ button{
 /* responsive layout */
 
 /* navbar */
-
+.navbar-container{
+    @apply bg-black/40 backdrop-blur-xl p-3 grid grid-cols-5 bg-fixed fixed w-full h-auto z-1;
+}
+.navbar-name{
+    @apply col-span-2 text-white text-2xl pl-2;
+}
+.navbar-bookmark{
+    @apply text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg text-center;
+}
 
 @media(min-width:768px){
-
+.navbar-container{
+    @apply bg-black/40 backdrop-blur-xl p-3 grid grid-cols-10 bg-fixed fixed w-full h-auto z-1;
+}
+.navbar-name{
+    @apply cursor-pointer col-span-7 text-white text-2xl pl-10;
+}
+.navbar-bookmark{
+    @apply cursor-pointer text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg text-center;
+}
 }
 
 @media(min-width:1028px){
@@ -51,13 +67,53 @@ button{
 }
 
 /* home page */
-
+.home-bg-landing{
+    @apply w-full h-full;
+}
+.home-text-container{
+    @apply absolute bg-black/80 text-left inset-0 flex flex-col items-center justify-center w-full h-full object-cover p-4;
+}
+.home-text-grid{
+    @apply justify-center place-self-center items-center text-shadow-white;
+}
+.home-text-interest{
+    @apply text-yellow-500 p-2;
+}
+.home-text-name{
+    @apply text-white text-8xl p-2;
+}
+.home-text-work{
+    @apply text-gray-300 p-2 pb-4;
+}
+.home-text-button{
+    @apply transition duration-200 border border-2 border-gray-500 shadow-xl p-2 text-gray-500 hover:border-white hover:text-white;
+}
 @media(min-width: 768px) {
-    
+.home-bg-landing{
+    @apply w-full h-full;
+}
+.home-text-container{
+    @apply absolute bg-black/80 text-left inset-0 flex flex-col items-center justify-center w-full h-full object-cover;
+}
+.home-text-grid{
+    @apply justify-center place-self-center items-center text-shadow-white grid grid-cols-1 gap-10;
+}
+.home-text-interest{
+    @apply text-yellow-500 p-2;
+}
+.home-text-name{
+    @apply text-white text-8xl p-2;
+}
+.home-text-work{
+    @apply text-gray-300 p-2 pb-4;
+}
+.home-text-button{
+    @apply transition duration-200 border border-2 border-gray-500 shadow-xl p-2 text-gray-500 hover:border-white hover:text-white;
+} 
 }
 @media(min-width: 1028px) {
 .home-bg-landing{
-    @apply w-full h-full;
+    @apply w-screen;
 }
 .home-text-container{
     @apply absolute bg-black/80 text-left inset-0 flex flex-col items-center justify-center w-full h-full object-cover;
@@ -80,32 +136,66 @@ button{
 }
 
 /* Background Website */
-
-@media(min-width: 768px){}
+.bg-website-fixed{
+    @apply fixed opacity-25 blur-sm z-[-50] w-full place-self-center justify-center;
+}
+@media(min-width: 768px){
+.bg-website-fixed{
+    @apply fixed opacity-25 blur-sm z-[-50] w-full place-self-center justify-center;
+}
+}
 @media(min-width: 1028px){
 .bg-website-fixed{
-    @apply fixed bg-repeat opacity-25 blur-sm z-[-50] w-full place-self-center justify-center;
+    @apply fixed opacity-25 blur-sm z-[-50] w-full place-self-center justify-center;
 }
 }
 
 /* About */
-
-@media(min-width: 768px){}
-@media(min-width: 1028px){
 .about-section{
-    @apply p-15;
+    @apply pt-15 w-full;
 }
 .about-layout{
-    @apply grid grid-cols-3 gap-20 p-3;
+    @apply grid grid-cols-1 gap-5 p-3;
 }
 .about-col-span-text{
-    @apply col-span-2 p-4;
+    @apply p-4;
 }
 .about-title{
-    @apply text-white text-8xl p-5;
+    @apply text-white text-center text-4xl p-2;
+}
+.about-desc-img-grid{
+    @apply grid grid-cols-1 gap-5;
 }
 .about-desc{
-    @apply text-gray-300 text-justify p-3;
+    @apply text-gray-300 text-sm/7 text-justify p-3;
+}
+.about-skill-flex{
+    @apply space-x-2 p-4 space-y-2;
+}
+.about-skill-piece{
+    @apply transition duration-200 justify-center text-center border border-gray-600 rounded-full text-gray-400 w-auto justify-center p-2 text-sm hover:border-orange-500;
+}
+.about-img-persona{
+    @apply rounded-full place-self-center max-w-40;
+}
+@media(min-width: 768px){
+.about-section{
+    @apply pt-15;
+}
+.about-layout{
+    @apply grid grid-cols-1 gap-10 p-3;
+}
+.about-col-span-text{
+    @apply p-4;
+}
+.about-title{
+    @apply text-white text-6xl p-5;
+}
+.about-desc-img-grid{
+    @apply grid grid-cols-3 gap-5;
+}
+.about-desc{
+    @apply order-1 col-span-2 text-gray-300 text-justify p-3;
 }
 .about-skill-flex{
     @apply flex space-x-2 p-4;
@@ -114,13 +204,334 @@ button{
     @apply transition duration-200 justify-center text-center border border-gray-600 rounded-full text-gray-400 w-auto justify-center p-2 text-sm hover:border-orange-500;
 }
 .about-img-persona{
-    @apply rounded-full;
+    @apply order-2 rounded-full max-w-60;
+}
+}
+@media(min-width: 1028px){
+.about-section{
+    @apply p-15;
+}
+.about-layout{
+    @apply grid grid-cols-3 gap-20 p-3;
+}
+.about-col-span-text{
+    @apply col-span-3 p-4;
+}
+.about-title{
+    @apply text-white text-8xl p-5;
+}
+.about-desc-img-grid{
+    @apply grid grid-cols-3 gap-5;
+}
+.about-desc{
+    @apply order-1 col-span-2 text-gray-300 text-justify p-3;
+}
+.about-skill-flex{
+    @apply flex space-x-2 p-4;
+}
+.about-skill-piece{
+    @apply transition duration-200 justify-center text-center border border-gray-600 rounded-full text-gray-400 w-auto justify-center p-2 text-sm hover:border-orange-500;
+}
+.about-img-persona{
+    @apply order-2 rounded-full max-w-70;
 }
 }
 
 /* Work */
+.work-section{
+    @apply pt-15 w-full;
+}
+.work-title{
+    @apply justify-center place-self-center items-center text-4xl text-center text-white;
+}
+.work-filter-grid{
+    @apply grid grid-cols-3 gap-10 justify-center place-self-center items-center pt-8 pb-3 pl-4 pr-4;
+}
+.work-filter-trigger{
+    @apply cursor-pointer text-sm text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg text-center;
+}
+/* editing card */
+.work-editing-grid{
+    @apply grid grid-cols-2 gap-2 p-4;
+}
+.work-editing-border{
+    @apply break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black;
+}
+.work-editing-card-grid{
+    @apply grid grid-cols-1 gap-5;
+}
+.work-editing-img{
+    @apply p-2;
+}
+.work-editing-top-spacing{
+    @apply pt-8;
+}
+.work-editing-card-title{
+    @apply text-xl text-white text-left p-1;
+}
+.work-editing-card-category{
+    @apply text-gray-500 text-justify p-1;
+}
+/* website card */
+.work-website-grid{
+    @apply grid grid-cols-1 gap-10 p-4;
+}
+.work-website-border{
+    @apply break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black;
+}
+.work-website-card-grid{
+    @apply grid grid-cols-1 gap-5;
+}
+.work-website-img{
+    @apply p-4;
+}
+.work-website-top-spacing{
+    @apply pt-8;
+}
+.work-website-card-title{
+    @apply text-xl text-white text-left;
+}
+.work-website-card-category{
+    @apply text-gray-500 text-justify;
+}
+/* montage */
+.work-montage-grid{
+    @apply grid grid-cols-2 gap-2 p-4;
+}
+.work-montage-border{
+    @apply break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black;
+}
+.work-montage-card-grid{
+    @apply grid grid-cols-1 gap-5;
+}
+.work-montage-img{
+    @apply p-2;
+}
+.work-montage-top-spacing{
+    @apply pt-8;
+}
+.work-montage-card-title{
+    @apply text-xl text-white text-left;
+}
+.work-montage-card-category{
+    @apply text-gray-500 text-justify;
+}
+/* content */
+.work-content-grid{
+    @apply grid grid-cols-1 gap-10 p-4;
+}
+.work-content-border{
+    @apply break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black;
+}
+.work-content-card-grid{
+    @apply grid grid-cols-1 gap-5;
+}
+.work-content-img{
+    @apply p-4;
+}
+.work-content-top-spacing{
+    @apply p-8;
+}
+.work-content-card-title{
+    @apply text-xl text-white text-left;
+}
+.work-content-card-category{
+    @apply text-gray-500 text-justify;
+}
+/* AIML */
+.work-aiml-grid{
+    @apply grid grid-cols-1 gap-10 p-4;
+}
+.work-aiml-border{
+    @apply break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black;
+}
+.work-aiml-card-grid{
+    @apply grid grid-cols-1 gap-5;
+}
+.work-aiml-img{
+    @apply p-4;
+}
+.work-aiml-top-spacing{
+    @apply p-8;
+}
+.work-aiml-card-title{
+    @apply text-xl text-white text-left;
+}
+.work-aiml-card-category{
+    @apply text-gray-500 text-justify;
+}
 
-@media(min-width: 768px){}
+/* design */
+.work-design-grid{
+    @apply grid grid-cols-1 gap-10 p-4;
+}
+.work-design-border{
+    @apply break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black;
+}
+.work-design-card-grid{
+    @apply grid grid-cols-1 gap-5;
+}
+.work-design-img{
+    @apply p-4 max-w-full max-h-50 place-self-center;
+}
+.work-design-top-spacing{
+    @apply p-8;
+}
+.work-design-card-title{
+    @apply text-xl text-white text-left;
+}
+.work-design-card-category{
+    @apply text-gray-500 text-justify;
+}
+
+@media(min-width: 768px){
+.work-section{
+    @apply pt-15;
+}
+.work-title{
+    @apply justify-center place-self-center items-center text-8xl text-white;
+}
+.work-filter-grid{
+    @apply grid grid-cols-6 gap-15 justify-center place-self-center items-center p-9;
+}
+.work-filter-trigger{
+    @apply cursor-pointer text-lg text-gray-300 hover:text-white transition duration-200 hover:text-shadow-lg text-center;
+}
+/* editing card */
+.work-editing-grid{
+    @apply grid grid-cols-3 gap-5 p-4;
+}
+.work-editing-border{
+    @apply break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black;
+}
+.work-editing-card-grid{
+    @apply grid grid-cols-1 gap-5;
+}
+.work-editing-img{
+    @apply p-2;
+}
+.work-editing-top-spacing{
+    @apply pt-8;
+}
+.work-editing-card-title{
+    @apply text-xl text-white text-left p-1;
+}
+.work-editing-card-category{
+    @apply text-gray-500 text-justify p-1;
+}
+/* website card */
+.work-website-grid{
+    @apply grid grid-cols-2 gap-5 p-4;
+}
+.work-website-border{
+    @apply break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black;
+}
+.work-website-card-grid{
+    @apply grid grid-cols-1 gap-5;
+}
+.work-website-img{
+    @apply p-4;
+}
+.work-website-top-spacing{
+    @apply pt-8;
+}
+.work-website-card-title{
+    @apply text-xl text-white text-left;
+}
+.work-website-card-category{
+    @apply text-gray-500 text-justify;
+}
+/* montage */
+.work-montage-grid{
+    @apply grid grid-cols-3 gap-5 p-4;
+}
+.work-montage-border{
+    @apply break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black;
+}
+.work-montage-card-grid{
+    @apply grid grid-cols-1 gap-5;
+}
+.work-montage-img{
+    @apply p-2;
+}
+.work-montage-top-spacing{
+    @apply pt-8;
+}
+.work-montage-card-title{
+    @apply text-xl text-white text-left;
+}
+.work-montage-card-category{
+    @apply text-gray-500 text-justify;
+}
+/* content */
+.work-content-grid{
+    @apply grid grid-cols-2 gap-5 p-4;
+}
+.work-content-border{
+    @apply break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black;
+}
+.work-content-card-grid{
+    @apply grid grid-cols-1 gap-5;
+}
+.work-content-img{
+    @apply p-4;
+}
+.work-content-top-spacing{
+    @apply p-8;
+}
+.work-content-card-title{
+    @apply text-xl text-white text-left;
+}
+.work-content-card-category{
+    @apply text-gray-500 text-justify;
+}
+/* AIML */
+.work-aiml-grid{
+    @apply grid grid-cols-2 gap-5 p-4;
+}
+.work-aiml-border{
+    @apply break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black;
+}
+.work-aiml-card-grid{
+    @apply grid grid-cols-1 gap-5;
+}
+.work-aiml-img{
+    @apply p-4;
+}
+.work-aiml-top-spacing{
+    @apply p-8;
+}
+.work-aiml-card-title{
+    @apply text-xl text-white text-left;
+}
+.work-aiml-card-category{
+    @apply text-gray-500 text-justify;
+}
+
+/* design */
+.work-design-grid{
+    @apply grid grid-cols-2 gap-5 p-4;
+}
+.work-design-border{
+    @apply break-inside-auto border-2 border-slate-900 hover:drop-shadow-slate-500/50 hover:drop-shadow-xl hover:scale-102 hover:border-white transition duration-200 bg-black;
+}
+.work-design-card-grid{
+    @apply grid grid-cols-1 gap-5;
+}
+.work-design-img{
+    @apply p-4 max-w-full max-h-50 place-self-center;
+}
+.work-design-top-spacing{
+    @apply p-8;
+}
+.work-design-card-title{
+    @apply text-xl text-white text-left;
+}
+.work-design-card-category{
+    @apply text-gray-500 text-justify;
+}
+
+}
 @media(min-width: 1028px){
 .work-section{
     @apply p-15;
@@ -270,8 +681,38 @@ button{
 }
 
 /* Contact */
-
-@media(min-width: 768px){}
+.contact-section{
+    @apply p-10 bottom-0;
+}
+.contact-title{
+    @apply justify-center place-self-center items-center text-4xl text-white;
+}
+.contact-grid{
+    @apply grid grid-cols-3 gap-10 justify-center place-self-center items-center p-10;
+}
+.contact-img{
+    @apply w-20 h-auto saturate-0 hover:scale-102 hover:drop-shadow-white hover:drop-shadow-sm rounded-full;
+}
+.contact-copyright{
+    @apply justify-center place-self-center items-center text-sm text-gray-300;
+}
+@media(min-width: 768px){
+.contact-section{
+    @apply p-10 bottom-0;
+}
+.contact-title{
+    @apply justify-center place-self-center items-center text-8xl text-white;
+}
+.contact-grid{
+    @apply grid grid-cols-5 gap-10 justify-center place-self-center items-center p-10;
+}
+.contact-img{
+    @apply w-10 h-auto saturate-0 hover:scale-102 hover:drop-shadow-white hover:drop-shadow-sm rounded-full;
+}
+.contact-copyright{
+    @apply justify-center place-self-center items-center text-sm text-gray-300;
+}
+}
 @media(min-width: 1028px){
 .contact-section{
     @apply p-10 bottom-0;
