@@ -694,7 +694,7 @@ button{
     @apply w-20 h-auto saturate-0 hover:scale-102 hover:drop-shadow-white hover:drop-shadow-sm rounded-full;
 }
 .contact-copyright{
-    @apply justify-center place-self-center items-center text-sm text-gray-300;
+    @apply justify-center place-self-center items-center text-sm text-gray-300 text-center;
 }
 @media(min-width: 768px){
 .contact-section{
@@ -710,7 +710,7 @@ button{
     @apply w-10 h-auto saturate-0 hover:scale-102 hover:drop-shadow-white hover:drop-shadow-sm rounded-full;
 }
 .contact-copyright{
-    @apply justify-center place-self-center items-center text-sm text-gray-300;
+    @apply justify-center place-self-center items-center text-sm text-gray-300 text-center;
 }
 }
 @media(min-width: 1028px){
@@ -727,6 +727,6 @@ button{
     @apply w-10 h-auto saturate-0 hover:scale-102 hover:drop-shadow-white hover:drop-shadow-sm rounded-full;
 }
 .contact-copyright{
-    @apply justify-center place-self-center items-center text-sm text-gray-300;
+    @apply justify-center place-self-center items-center text-sm text-gray-300 text-center;
 }
 }
